@@ -1,0 +1,102 @@
+{% extends "base.html" %} 
+{% load static %}
+{% block docTitle %} <title>CEWA Home</title> {%endblock %} 
+{% block navLinks %}
+<a href="/" class="active">Home</a>
+<a href="products">Products</a>
+<a href="services">Services</a>
+<a href="about">About</a>
+<a href="contact">Contact</a>
+{% endblock %} 
+{% block hamburgerNavLinks %}
+<a href="products">Products</a>
+<a href="services">Services</a>
+<a href="about">About</a>
+<a href="contact">Contact</a>
+{% endblock %} 
+{% block content %}
+<main class="main">
+  <section id="welcome">
+    <h1>Welcome to Cleaning Equipment WA</h1>
+    <div class="text">
+      Welcome to our website! We hope that you find everything that you need
+      from us here and if you'd like to place an order, make an enquiry or you
+      find a problem with this website, feel free to contact us. We would be
+      more than happy to assist you.
+      <br />
+      <br />
+      We are a family run and driven business looking to deliver quality
+      products to our valuable customers.
+    </div>
+    <hr />
+  </section>
+  <section id="home-boxes">
+    <div class="home-box">
+      <img src="{% static 'images/girl-scrubber.png' %}" alt="#" />
+      <div class="home-box-text">
+        <a href="products">
+          <p>Our Machines</p>
+        </a>
+      </div>
+    </div>
+    <div class="home-box">
+      <img src="{% static 'images/what-we-do.png' %}" alt="#" />
+      <div class="home-box-text">
+        <a href="services">
+          <p>What We Do</p>
+        </a>
+      </div>
+    </div>
+    <div class="home-box">
+      <img src="{% static 'images/group-photo-home.png' %}" alt="#" />
+      <div class="home-box-text">
+        <a href="about">
+          <p>What We're About</p>
+        </a>
+      </div>
+    </div>
+    <div class="home-box">
+      <img src="{% static 'images/get-in-touch.png' %}" alt="#" />
+      <div class="home-box-text">
+        <a href="contact">
+          <p>Get in Touch</p>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="location">
+    <h1>Our Location</h1>
+    <div class="location-panel">
+      <div class="location-image">
+        <a
+          href="https://www.google.com/maps/place/Statewide+Cleaning+Supplies/@-31.908969,115.8160484,15.75z/data=!4m5!3m4!1s0x0:0xb464852c85e1be33!8m2!3d-31.9101321!4d115.8190411?hl=en"
+          target="_blank"
+        >
+          <img src="{% static 'images/statewide-map.png' %}" alt="map location" />
+        </a>
+      </div>
+      <div class="location-text">
+        <div>
+          <p>
+            You can find us and our machines located at our business partner's
+            location, Statewide Cleaning Supplies. We have teamed up with
+            Statewide to work together and help deliver quality machines and
+            accessories to as many people as we can.
+          </p>
+        </div>
+        <div class="location-address">
+          <img src="{% static 'images/location-pin.png' %}" alt="location pin" />
+          <p>39/41 Frobisher St, Osborne Park WA 6017</p>
+          <br />
+          <p>Opening Hours: 8am-5pm Everyday <b>(Except Saturday)</b></p>
+        </div>
+      </div>
+      <div class="location-image">
+        <a href="https://statewideclean.com.au/" target="_blank">
+          <img src="{% static 'images/statewide-building.jpg' %}" alt="statewide building" />
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock%}

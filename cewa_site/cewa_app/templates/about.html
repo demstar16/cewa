@@ -1,0 +1,113 @@
+{% extends "base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>About Us</title>
+{% endblock %} 
+{% block navLinks %}
+<a href="../">Home</a>
+<a href="../products">Products</a>
+<a href="../services">Services</a>
+<a href="../about" class="active">About</a>
+<a href="../contact">Contact</a>
+{% endblock %} 
+{% block hamburgerNavLinks %}
+<a href="../">Home</a>
+<a href="../products">Products</a>
+<a href="../services">Services</a>
+<a href="../contact">Contact</a>
+{% endblock %} 
+{% block content %}
+<main>
+  <section id="group">
+    <h1>Meet the Team</h1>
+    <p>
+      Here at Cleaning Equipment WA we strive to deliver quality and affordable
+      machines to our valuable customers. Our point of difference is our care
+      and direct involvement with our clients, by this we are referring to us
+      taking calls and us repairing the machines directly, should they need
+      repairing. This is our point of difference.
+    </p>
+    <img src="{% static 'images/group-photo.png' %}" alt="group pic" />
+    <hr />
+  </section>
+  <section id="about-boxes">
+    <div class="about-box-right">
+      <div class="about-description">
+        <div class="person-description">
+          <h2>Brett Thompson</h2>
+          <p>
+            Brett Thompson has a wealth of over 30 years experience in the
+            cleaning equipment machinery. Brett has worked as a service manager
+            for Campbells Janitor Supplies and Statewide Cleaning Supplies and
+            was the founder of Commercial Cleaning Equipment. Cleaning Equipment
+            WA, is specialising in a brand of equipment that has price, quality
+            and performance in mind. We also know that any machine is only as
+            good as the back up service that is available to you, the customer.
+            With that in mind Cleaning Equipment WA will endeavour to keep most
+            parts here in WA to keep you moving when you need it.
+          </p>
+        </div>
+        <div>
+          <h3>Executive Director</h3>
+        </div>
+      </div>
+      <img src="{% static 'images/brett.png' %}" alt="Brett Thompson" />
+    </div>
+
+    <div class="about-box-left">
+      <img src="{% static 'images/dempsey.png' %}" alt="Dempsey Thompson" />
+      <div class="about-description">
+        <div class="person-description">
+          <h2>Dempsey Thompson</h2>
+          <p>
+            My name is Dempsey and here at CEWA I am in charge of logistics and
+            inventory, I also look after the tech side of things in the company,
+            like this website for instance. I am an enthusiastic person who
+            loves bringing value to my clients and helping anyone where I can.
+          </p>
+        </div>
+        <div>
+          <h3>Operations Manager and Software Developer</h3>
+        </div>
+      </div>
+    </div>
+    <div class="about-box-right">
+      <div class="about-description">
+        <div class="person-description">
+          <h2>Cassidy Thompson</h2>
+          <p>
+            Hi my name is Cassidy and I operate marketing and communications
+            within CEWA. I am also employed as a consultant for KPMG and have
+            graduated university with a bachelor of commerce, majoring in
+            economics and marketing. I enjoy socialising and having a beer with
+            my mates.
+          </p>
+        </div>
+        <div>
+          <h3>Marketing Director</h3>
+        </div>
+      </div>
+      <img src="{% static 'images/cassidy.png' %}" alt="Cassidy Thompson" />
+    </div>
+    <div class="about-box-left">
+      <img src="{% static 'images/oliver.png' %}" alt="Oliver Angelcoff" />
+      <div class="about-description">
+        <div class="person-description">
+          <h2>Oliver Angelcoff</h2>
+          <p>
+            Hello my name is Oliver, I am CEWA’s service technician. I am in
+            control of performing scheduled services we offer and am also on
+            call to attend any breakdowns of the machines and repair them
+            accordingly. I am a cheerful, approachable and outgoing person who
+            is easy to deal with and I want to provide the best work possible
+            for our clients.
+          </p>
+        </div>
+        <div>
+          <h3>Service Technician</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock%}

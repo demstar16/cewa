@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    {% block docTitle %}{% endblock %}
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="align1">
+          <img
+            id="cewa-logo"
+            src="{% static 'images/cewa-no-slogan.png' %}"
+            alt="Company Logo"
+          />
+        </div>
+
+        <div class="menu">
+        {% block navLinks %}{% endblock %}
+        </div>
+
+        <div class="align2">
+          <img
+            id="iclean-logo"
+            src="{% static 'images/iclean.png' %}"
+            alt="Partner Company Logo"
+          />
+        </div>
+
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="hamburgerLinks">
+        {% block hamburgerNavLinks %}{% endblock %}
+      </div>
+    </nav>
+    <script src="main.js"></script>
+
+    {% block content %}{% endblock%}
+
+    <footer>
+      <div id="footer">
+        <img src="{% static 'images/cewa-no-slogan.png' %}" alt="logo" />
+        <p>Copyright © 2022 Cleaning Equipment WA</p>
+      </div>
+    </footer>
+  </body>
+</html>

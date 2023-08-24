@@ -1,0 +1,71 @@
+{% extends "base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>Products</title> 
+{%endblock %} 
+{% block navLinks %}
+<a href="/">Home</a>
+<a href="../products" class="active">Products</a>
+<a href="../services">Services</a>
+<a href="../about">About</a>
+<a href="../contact">Contact</a>
+{% endblock %} 
+{% block hamburgerNavLinks %}
+<a href="../">Home</a>
+<a href="../services">Services</a>
+<a href="../about">About</a>
+<a href="../contact">Contact</a>
+{% endblock %} 
+{% block content %}
+<main>
+  <section id="products-intro">
+    <h1>What We Sell</h1>
+    <p>
+      Check out our range of scrubbers, sweepers and vacuum cleaners. We have
+      ride ons, walk behinds and different sizes to ensure that you can get the
+      best machine to suit your needs! We also repair all our machines ourself,
+      meaning that if anything is to go wrong we will come and personally repair
+      your machine as quickly as you need it done.
+    </p>
+    <hr />
+  </section>
+  <section id="product-boxes">
+    <a href="machine-categories/vacuums.html">
+      <div class="product-box">
+        <img src="{% static 'images/w36.png' %}" alt="W36" />
+        <h2>Vacuum Cleaners</h2>
+      </div>
+    </a>
+    <a href="machine-categories/scrubbers.html">
+      <div class="product-box">
+        <img src="{% static 'images/gm50b.png' %}" alt="GM50B" />
+        <h2>Floor Scrubbers</h2>
+      </div>
+    </a>
+    <a href="machine-categories/sweepers.html">
+      <div class="product-box">
+        <img src="{% static 'images/isweep.png' %}" alt="iSweep" />
+        <h2>Floor Sweepers</h2>
+      </div>
+    </a>
+    <a href="machine-categories/polishers.html">
+      <div class="product-box">
+        <img src="{% static 'images/fc-1517.png' %}" alt="FC-1517" />
+        <h2>Polishers</h2>
+      </div>
+    </a>
+    <a href="machine-categories/carpet-accessories.html">
+      <div class="product-box">
+        <img src="{% static 'images/c-1.png' %}" alt="C-1" />
+        <h2>Carpet Extractors & Accessories</h2>
+      </div>
+    </a>
+    <a href="machine-categories/misc.html">
+      <div class="product-box">
+        <img src="{% static 'images/x5.png' %}" alt="Fogger" />
+        <h2>Miscellaneous</h2>
+      </div>
+    </a>
+  </section>
+</main>
+{% endblock%}

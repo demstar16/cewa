@@ -1,0 +1,148 @@
+{% extends "base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>Services</title>
+{% endblock %}
+{% block navLinks %}
+<a href="/">Home</a>
+<a href="../products">Products</a>
+<a href="../services" class="active">Services</a>
+<a href="../about">About</a>
+<a href="../contact">Contact</a>
+{% endblock %}
+{% block hamburgerNavLinks %}
+<a href="../products">Products</a>
+<a href="../">Home</a>
+<a href="../about">About</a>
+<a href="../contact">Contact</a>
+{% endblock %}
+{% block content %}
+<main class="main">
+  <section id="service-intro">
+    <h1>Services We Offer</h1>
+    <hr />
+  </section>
+  <section id="service-cards">
+    <div class="service-card">
+      <div class="service-card-inner">
+        <div class="service-card-front">
+          <img
+            src="{% static 'images/sell.png' %}"
+            alt="machine"
+            style="width: 300; height: 200px"
+          />
+          <h1>Sell</h1>
+        </div>
+        <div class="service-card-back">
+          <h1>What We Sell</h1>
+          <p>
+            Here at CEWA, we sell a wide range of machines including scrubbers,
+            sweepers, vacuums, carpet extractors and foggers. We also keep in
+            stock the spare parts that will most likely be required, should you
+            need any. This ensures that if something is to happen that you wont
+            be without a working machine for a long period of time.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-card-inner">
+        <div class="service-card-front">
+          <img
+            src="{% static 'images/maintenance.png' %}"
+            alt="machine"
+            style="width: 300; height: 200px"
+          />
+          <h1>Maintenance</h1>
+        </div>
+        <div class="service-card-back">
+          <h1>Machine Maintenance</h1>
+          <p>
+            We perform maintanence on our machines every 6 months by default, we
+            are happy to provide an earlier service if needed. This ensures that
+            you get your moneys worth and have a quality machine that lasts you
+            a long time.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-card-inner">
+        <div class="service-card-front">
+          <img
+            src="{% static 'images/repairs.png' %}"
+            alt="machine"
+            style="width: 300; height: 200px"
+          />
+          <h1>Repairs</h1>
+        </div>
+        <div class="service-card-back">
+          <h1>Machine Repairs</h1>
+          <p>
+            We have many parts in stock, on hand ready to go should a part of
+            the machine break. We repair our machines promptly and effectively
+            if something is to go wrong... which it doesn't often.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-card-inner">
+        <div class="service-card-front">
+          <img
+            src="{% static 'images/demonstration.png' %}"
+            alt="machine"
+            style="width: 300; height: 200px"
+          />
+          <h1>Demonstrations</h1>
+        </div>
+        <div class="service-card-back">
+          <h1>Demonstrations</h1>
+          <p>
+            If you are unsure of whether a machine will suit your area or not,
+            or if you are unfamiliar with this sort of equipment. Fear not, we
+            will come out to your site with the machine you're thinking of
+            buying and show you how to use it and assess whether or not it will
+            be suitable for your area.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="service-videos">
+    <h1>General Maintenance of Machines</h1>
+    <div class="yt-video">
+      <iframe
+        width="650px"
+        height="370px"
+        src="https://www.youtube.com/embed/hj0tLWd4EFI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <hr />
+    <h1>What to check for if "broken"</h1>
+    <div class="yt-video">
+      <iframe
+        width="650px"
+        height="370px"
+        src="https://www.youtube.com/embed/hj0tLWd4EFI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <p>
+      If the above videos don't help your issue, get in touch with us directly
+      and we will be more than happy to help you out.
+    </p>
+    <br />
+    <p><a href="../contact">Contact Us</a></p>
+  </section>
+  <br />
+  <br />
+</main>
+{% endblock%}
