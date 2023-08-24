@@ -3,5 +3,5 @@
 __pycache__/
 env/
 
-KEEP KEY OUT OF GITHUB REPO
+# KEEP KEY OUT OF GITHUB REPO
 cewa_site/secret_key.txt
