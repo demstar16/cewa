@@ -54,11 +54,11 @@
   }
   
   .hamburger {
-    display: block;
+    display: flex;
+    justify-content: end;
     position: relative;
     z-index: 1;
     float: right;
-  
     user-select: none;
     appearance: none;
     border: none;
@@ -73,7 +73,6 @@
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-  
     background-color: var(--black);
     border-radius: 6px;
     z-index: 1;

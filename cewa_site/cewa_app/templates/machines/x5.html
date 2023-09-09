@@ -1,0 +1,23 @@
+{% extends "machines/machine-base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>X5</title>
+{% endblock %} 
+{% block machineName %}
+<h1>X5</h1>
+<h3>Fogger</h3>
+<hr />
+{% endblock%}
+{% block specs %}
+<img src="{% static 'images/x5.png' %}" alt="x5" >
+<img src="{% static 'images/x5-specs.png' %}" alt="x5 specs" class="specs">
+{% endblock %}
+{% block usage %}
+No usage yet
+{% endblock %}
+{% block brochure %}
+<a href="{% static 'brochures/x5-brochure.jpg' %}" target="_blank">Click Here for the x5 Brochure</a> 
+{% endblock %}
+{% block returnButton%} 
+<a href="../carpet-accessories">Return to Carpet Accessories</a>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "machines/machine-base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>W86</title>
+{% endblock %} 
+{% block machineName %}
+<h1>W86</h1>
+<h3>Wet and Dry Vacuum Cleaner</h3>
+<hr />
+{% endblock%}
+{% block specs %}
+<img src="{% static 'images/w86.png' %}" alt="w86" >
+<img src="{% static 'images/w86-specs.png' %}" alt="w86 specs" class="specs">
+{% endblock %}
+{% block usage %}
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quos repudiandae distinctio. Dolor, voluptate debitis?
+{% endblock %}
+{% block brochure %}
+<a href="{% static 'brochures/w36-w86-brochure.pdf' %}" target="_blank">Click Here for the w86 Brochure</a>
+{% endblock %}

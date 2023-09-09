@@ -1,0 +1,25 @@
+{% extends "machines/machine-base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>FC-1517</title>
+{% endblock %} 
+{% block machineName %}
+<h1>FC-1517</h1>
+<h3>Multi-Function Floor Machine</h3>
+<hr />
+{% endblock%}
+{% block specs %}
+<img src="{% static 'images/fc-1517.png' %}" alt="fc1517" >
+<img src="{% static 'images/fc-1517-specs.png' %}" alt="fc1517 specs" class="specs">
+{% endblock %}
+{% block usage %}
+This is a robust slow speed polisher, ideal for dry foam shampooing
+for carpets, can also be used for scrubbing hard floors and stripping
+and sealing.
+{% endblock %}
+{% block brochure %}
+<a href="{% static 'brochures/fc-1517-brochure.jpg' %}" target="_blank">Click Here for the FC-1517 Brochure</a>
+{% endblock %}
+{% block returnButton%} 
+<a href="../polishers">Return to Polishers</a>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "machines/machine-base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>B3</title>
+{% endblock %} 
+{% block machineName %}
+<h1>B3</h1>
+<h3>Blower</h3>
+<hr />
+{% endblock%}
+{% block specs %}
+<img src="{% static 'images/b3.png' %}" alt="b3" >
+<img src="{% static 'images/b3-specs.png' %}" alt="b3 specs" class="specs">
+{% endblock %}
+{% block usage %}
+This is used for drying carpets, rugs and can be used where air flow
+is required. Perfect if you clean rugs or carpets in wet environments.
+{% endblock %}
+{% block brochure %}
+{% comment %} TODO: brochure
+<a href="{% static '' %}" target="_blank">Click Here for the B3 Brochure</a> {% endcomment %}
+{% endblock %}
+{% block returnButton%} 
+<a href="../carpet-accessories">Return to Carpet Accessories</a>
+{% endblock %}

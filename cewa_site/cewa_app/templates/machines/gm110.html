@@ -1,0 +1,25 @@
+{% extends "machines/machine-base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>GM110</title>
+{% endblock %} 
+{% block machineName %}
+<h1>GM110</h1>
+<h3>Ride On Scrubber</h3>
+<hr />
+{% endblock%}
+{% block specs %}
+<img src="{% static 'images/gm110.png' %}" alt="gm110" >
+<img src="{% static 'images/gm110-specs.png' %}" alt="gm110 specs" class="specs">
+{% endblock %}
+{% block usage %}
+This machine will clean 5100 M2/hr and ideal where a small ride on
+scrubber that has flexibility to get in some of those smaller areas
+{% endblock %}
+{% block brochure %}
+{% comment %} TODO: brochure {% endcomment %}
+{% comment %} <a href="{% static '' %}" target="_blank">Click Here for the GM110 Brochure</a> {% endcomment %}
+{% endblock %}
+{% block returnButton%} 
+<a href="../scrubbers">Return to Scrubbers</a>
+{% endblock %}

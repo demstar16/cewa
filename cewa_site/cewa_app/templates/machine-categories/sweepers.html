@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+{% block docTitle %}
+<title>Sweepers</title>
+{% endblock %}
+{% block navLinks %}
+<a href="../../">Home</a>
+<a href="../../products">Products</a>
+<a href="../../services">Services</a>
+<a href="../../about">About</a>
+<a href="../../contact">Contact</a>
+{% endblock %} 
+{% block hamburgerNavLinks %} 
+<a href="../../">Home</a>
+<a href="../../products">Products</a>
+<a href="../../services">Services</a>
+<a href="../../about">About</a>
+<a href="../../contact">Contact</a>
+{% endblock %} 
+{% block content %}
+<main>
+    <section id="sweepers-intro">
+      <h1>Floor Sweepers</h1>
+      <hr />
+      <a href="../">Return to Products</a>
+    </section>
+    <section id="product-boxes">
+      <a href="s1500d">
+        <div class="product-box">
+          <img src="{% static 'images/s1500d.png' %}" alt="s1500d" />
+          <div class="product-brief">
+            <h2>S1500D</h2>
+            <h3>Ride On Sweeper</h3>
+          </div>
+        </div>
+      </a>
+      <a href="s1900d">
+        <div class="product-box">
+          <img src="{% static 'images/s1900d.png' %}" alt="s1900d" />
+          <div class="product-brief">
+            <h2>S1900D</h2>
+            <h3>Ride On Sweeper</h3>
+          </div>
+        </div>
+      </a>
+      <a href="isweep">
+        <div class="product-box">
+          <img src="{% static 'images/isweep.png' %}" alt="iSweep" />
+          <div class="product-brief">
+            <h2>iSweep</h2>
+            <h3>Walk Behind Sweeper</h3>
+          </div>
+        </div>
+      </a>
+    </section>
+  </main>
+{% endblock %}

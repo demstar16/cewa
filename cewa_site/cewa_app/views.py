@@ -16,3 +16,91 @@ def about(request):
 
 def contact(request):
     return render(request, "contact.html")
+
+def vacuums(request):
+    return render(request, "machine-categories/vacuums.html")
+
+def scrubbers(request):
+    return render(request, "machine-categories/scrubbers.html")
+
+def sweepers(request):
+    return render(request, "machine-categories/sweepers.html")
+
+def polishers(request):
+    return render(request, "machine-categories/polishers.html")
+
+def carpet_accessories(request):
+    return render(request, "machine-categories/carpet-accessories.html")
+
+def misc(request):
+    return render(request, "machine-categories/misc.html")
+
+def w36(request):
+    return render(request, "machines/w36.html")
+
+def w86(request):
+    return render(request, "machines/w86.html")
+
+def v20(request):
+    return render(request, "machines/v20.html")
+
+def i15b(request):
+    return render(request, "machines/i15b.html")
+
+def i35b(request):
+    return render(request, "machines/i35b.html")
+
+def gm50b(request):
+    return render(request, "machines/gm50b.html")
+
+def gm56bt(request):
+    return render(request, "machines/gm56bt.html")
+
+def gm70bt(request):
+    return render(request, "machines/gm70bt.html")
+
+def gm65rbt(request):
+    return render(request, "machines/gm65rbt.html")
+
+def gm110(request):
+    return render(request, "machines/gm110.html")
+
+def i130(request):
+    return render(request, "machines/i130.html")
+
+def gm130(request):
+    return render(request, "machines/gm130.html")
+
+def gm160(request):
+    return render(request, "machines/gm160.html")
+
+def gm230(request):
+    return render(request, "machines/gm230.html")
+
+def s1500d(request):
+    return render(request, "machines/s1500d.html")
+
+def s1900d(request):
+    return render(request, "machines/s1900d.html")
+
+def isweep(request):
+    return render(request, "machines/isweep.html")
+
+def fc1517(request):
+    return render(request, "machines/fc1517.html")
+
+def fc2517(request):
+    return render(request, "machines/fc2517.html")
+
+def c1(request):
+    return render(request, "machines/c1.html")
+
+def c2(request):
+    return render(request, "machines/c2.html")
+
+def b3(request):
+    return render(request, "machines/b3.html")
+
+def x5(request):
+    return render(request, "machines/x5.html")
+

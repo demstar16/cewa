@@ -1,0 +1,23 @@
+{% extends "machines/machine-base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>i15b</title>
+{% endblock %} 
+{% block machineName %}
+<h1>i15b</h1>
+<h3>Walk Behind Scrubber</h3>
+<hr />
+{% endblock%}
+{% block specs %}
+<img src="{% static 'images/i15b.png' %}" alt="i15b" >
+<img src="{% static 'images/i15b-specs.png' %}" alt="i15b specs" class="specs">
+{% endblock %}
+{% block usage %}
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quos repudiandae distinctio. Dolor, voluptate debitis?
+{% endblock %}
+{% block brochure %}
+<a href="{% static 'brochures/i15b-brochure.pdf' %}" target="_blank">Click Here for the i15b Brochure</a>
+{% endblock %}
+{% block returnButton%} 
+<a href="../scrubbers">Return to Scrubbers</a>
+{% endblock %}

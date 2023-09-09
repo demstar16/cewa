@@ -1,0 +1,26 @@
+{% extends "machines/machine-base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>GM50B</title>
+{% endblock %} 
+{% block machineName %}
+<h1>GM50B</h1>
+<h3>Walk Behind Scrubber</h3>
+<hr />
+{% endblock%}
+{% block specs %}
+<img src="{% static 'images/gm50b.png' %}" alt="gm50b" >
+<img src="{% static 'images/gm50b-specs.png' %}" alt="gm50b specs" class="specs">
+{% endblock %}
+{% block usage %}
+This machine will clean 1950 M2/hr and is a brush driven machine and is
+perfect for flat floors, foyers, small shopping centres, office
+hallways, small industrial floors, workshops, hospitals, commercial
+buildings, and nursing homes.
+{% endblock %}
+{% block brochure %}
+<a href="{% static 'brochures/gm50b-brochure.pdf' %}" target="_blank">Click Here for the GM50B Brochure</a>
+{% endblock %}
+{% block returnButton%} 
+<a href="../scrubbers">Return to Scrubbers</a>
+{% endblock %}

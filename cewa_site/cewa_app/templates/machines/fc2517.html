@@ -1,0 +1,26 @@
+{% extends "machines/machine-base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>FC-2517</title>
+{% endblock %} 
+{% block machineName %}
+<h1>FC-2517</h1>
+<h3>Stripping & Grinding Machine</h3>
+<hr />
+{% endblock%}
+{% block specs %}
+<img src="{% static 'images/fc-2517.png' %}" alt="fc2517" >
+<img src="{% static 'images/fc-2517-specs.png' %}" alt="fc2517 specs" class="specs">
+{% endblock %}
+{% block usage %}
+This machine has a fair amount of horse power and weight, and is
+suited for grinding concrete and all of the above. If you are grinding
+concrete this is your machine.
+{% endblock %}
+{% block brochure %}
+{% comment %} TODO: brochure
+<a href="{% static '' %}" target="_blank">Click Here for the FC-2517 Brochure</a> {% endcomment %}
+{% endblock %}
+{% block returnButton%} 
+<a href="../polishers">Return to Polishers</a>
+{% endblock %}

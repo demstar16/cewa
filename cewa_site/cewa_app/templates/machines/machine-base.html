@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+{% block navLinks %}
+<a href="../../">Home</a>
+<a href="../../products">Products</a>
+<a href="../../services">Services</a>
+<a href="../../about">About</a>
+<a href="../../contact">Contact</a>
+{% endblock %} 
+{% block hamburgerNavLinks %} 
+<a href="../../">Home</a>
+<a href="../../products">Products</a>
+<a href="../../services">Services</a>
+<a href="../../about">About</a>
+<a href="../../contact">Contact</a>
+{% endblock %} 
+{% block content %}
+<main>
+    <div class="machine-title">
+    {% block machineName %}{% endblock%}
+    </div>
+    <div class="machine-display-and-specs">
+      {% block specs %}{% endblock %}
+    </div>
+    <br>
+    <br>
+    <div class="machine-suited-for">
+      <h1>Recommended Usage</h1>
+      <p>{% block usage %}{% endblock %}</P>
+    </div>
+    <br>
+    <br>
+    <div class="machine-brochure">
+      {% block brochure %}{% endblock %}
+    </div>
+    <br>
+    <br>
+    <div class="machine-buy">
+      <h2>Interested in Buying?</h2>
+      <a href="../../contact">
+        <p>Contact Us</p>
+      </a>
+    </div>
+    <br />
+    <hr>
+    <br />
+    <div class="machine-buy">
+      <h2>Want a Demo?</h2>
+      <a href="../demonstration.html">
+        <p>Book a Demo</p>
+      </a>
+    </div>
+    <br />
+    <hr>
+    <br />
+    <div class="return">
+      {% block returnButton%} {% endblock %}
+    </div>
+    <br>
+    <br>
+  </main>
+{% endblock %}

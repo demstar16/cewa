@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+{% block docTitle %}
+<title>Carpet Accessories</title>
+{% endblock %}
+{% block navLinks %}
+<a href="../../">Home</a>
+<a href="../../products">Products</a>
+<a href="../../services">Services</a>
+<a href="../../about">About</a>
+<a href="../../contact">Contact</a>
+{% endblock %} 
+{% block hamburgerNavLinks %} 
+<a href="../../">Home</a>
+<a href="../../products">Products</a>
+<a href="../../services">Services</a>
+<a href="../../about">About</a>
+<a href="../../contact">Contact</a>
+{% endblock %} 
+{% block content %}
+<main>
+    <section id="carpet-accessories-intro">
+      <h1>Carpet Extractors and Accessories</h1>
+      <hr />
+      <a href="../">Return to Products</a>
+    </section>
+    <section id="product-boxes">
+      <a href="c1">
+        <div class="product-box">
+          <img src="{% static 'images/c-1.png' %}" alt="C-1" />
+          <div class="product-brief">
+            <h2>C-1</h2>
+            <h3>Carpet Extractor</h3>
+          </div>
+        </div>
+      </a>
+      <a href="c2">
+        <div class="product-box">
+          <img src="{% static 'images/c-2.png' %}" alt="C-2" />
+          <div class="product-brief">
+            <h2>C-2</h2>
+            <h3>Carpet Extractor</h3>
+          </div>
+        </div>
+      </a>
+      <a href="b3">
+        <div class="product-box">
+          <img src="{% static 'images/b3.png' %}" alt="B3" />
+          <div class="product-brief">
+            <h2>B3</h2>
+            <h3>Blower</h3>
+          </div>
+        </div>
+      </a>
+    </section>
+  </main>
+  {% endblock %}

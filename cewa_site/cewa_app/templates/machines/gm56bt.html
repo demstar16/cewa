@@ -1,0 +1,25 @@
+{% extends "machines/machine-base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>GM56BT</title>
+{% endblock %} 
+{% block machineName %}
+<h1>GM56BT</h1>
+<h3>Walk Behind Scrubber</h3>
+<hr />
+{% endblock%}
+{% block specs %}
+<img src="{% static 'images/gm56bt.png' %}" alt="gm56bt" >
+<img src="{% static 'images/gm56bt-specs.png' %}" alt="gm56bt specs" class="specs">
+{% endblock %}
+{% block usage %}
+This machine will clean 2520 M2/hr and is ideal where there are ramps
+and control is needed. It will do the same areas as the 50B but has a
+traction self drive feature on the machine.
+{% endblock %}
+{% block brochure %}
+<a href="{% static 'brochures/gm56bt-brochure.pdf' %}" target="_blank">Click Here for the GM56BT Brochure</a>
+{% endblock %}
+{% block returnButton%} 
+<a href="../scrubbers">Return to Scrubbers</a>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "machines/machine-base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>S1500D</title>
+{% endblock %} 
+{% block machineName %}
+<h1>GM230</h1>
+<h3>Ride On Sweeper</h3>
+<hr />
+{% endblock%}
+{% block specs %}
+<img src="{% static 'images/s1500d.png' %}" alt="s1500d" >
+<img src="{% static 'images/s1500d-specs.png' %}" alt="s1500d specs" class="specs">
+{% endblock %}
+{% block usage %}
+no usage yet
+{% endblock %}
+{% block brochure %}
+{% comment %} TODO: brochure
+<a href="{% static '' %}" target="_blank">Click Here for the S1500D Brochure</a> {% endcomment %}
+{% endblock %}
+{% block returnButton%} 
+<a href="../sweepers">Return to Sweepers</a>
+{% endblock %}

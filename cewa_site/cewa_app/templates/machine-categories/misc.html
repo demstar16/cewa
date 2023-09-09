@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% block docTitle %}
+<title>Misc</title>
+{% endblock %}
+{% block navLinks %}
+<a href="../../">Home</a>
+<a href="../../products">Products</a>
+<a href="../../services">Services</a>
+<a href="../../about">About</a>
+<a href="../../contact">Contact</a>
+{% endblock %} 
+{% block hamburgerNavLinks %} 
+<a href="../../">Home</a>
+<a href="../../products">Products</a>
+<a href="../../services">Services</a>
+<a href="../../about">About</a>
+<a href="../../contact">Contact</a>
+{% endblock %} 
+{% block content %}
+<main>
+    <section id="misc-intro">
+      <h1>Miscellaneous</h1>
+      <hr />
+      <a href="../">Return to Products</a>
+    </section>
+    <section id="product-boxes">
+      <a href="x5">
+        <div class="product-box">
+          <img src="{% static 'images/x5.png' %}" alt="X5 Fogger" />
+          <div class="product-brief">
+            <h2>X5</h2>
+            <h3>Fogger</h3>
+          </div>
+        </div>
+      </a>
+    </section>
+  </main>
+{% endblock %}

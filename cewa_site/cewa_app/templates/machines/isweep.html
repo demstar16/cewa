@@ -1,0 +1,23 @@
+{% extends "machines/machine-base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>iSweep</title>
+{% endblock %} 
+{% block machineName %}
+<h1>iSweep</h1>
+<h3>Walk Behind Sweeper</h3>
+<hr />
+{% endblock%}
+{% block specs %}
+<img src="{% static 'images/isweep.png' %}" alt="isweep" >
+<img src="{% static 'images/isweep-specs.png' %}" alt="isweep specs" class="specs">
+{% endblock %}
+{% block usage %}
+no usage yet
+{% endblock %}
+{% block brochure %}
+<a href="{% static 'brochures/isweep-brochure.jpg' %}" target="_blank">Click Here for the iSweep Brochure</a>
+{% endblock %}
+{% block returnButton%} 
+<a href="../sweepers">Return to Sweepers</a>
+{% endblock %}

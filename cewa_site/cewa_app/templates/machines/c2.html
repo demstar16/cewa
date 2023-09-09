@@ -1,0 +1,25 @@
+{% extends "machines/machine-base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>C-2</title>
+{% endblock %} 
+{% block machineName %}
+<h1>C-2</h1>
+<h3>Carpet Extractor</h3>
+<hr />
+{% endblock%}
+{% block specs %}
+<img src="{% static 'images/c-2.png' %}" alt="c2" >
+<img src="{% static 'images/c-2-specs.png' %}" alt="c-2 specs" class="specs">
+{% endblock %}
+{% block usage %}
+Similar to the C-1 in most ways, except that it's a bit bigger and
+more suited to Offices and schools, prisons, Hospitals
+{% endblock %}
+{% block brochure %}
+{% comment %} TODO: brochure
+<a href="{% static '' %}" target="_blank">Click Here for the C-2 Brochure</a> {% endcomment %}
+{% endblock %}
+{% block returnButton%} 
+<a href="../carpet-accessories">Return to Carpet Accessories</a>
+{% endblock %}

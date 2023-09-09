@@ -1,0 +1,24 @@
+{% extends "machines/machine-base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>GM65RBT</title>
+{% endblock %} 
+{% block machineName %}
+<h1>GM65RBT</h1>
+<h3>Walk Behind Scrubber</h3>
+<hr />
+{% endblock%}
+{% block specs %}
+<img src="{% static 'images/gm65rbt.png' %}" alt="gm65rbt" >
+<img src="{% static 'images/gm65rbt-specs.png' %}" alt="gm65rbt specs" class="specs">
+{% endblock %}
+{% block usage %}
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quos repudiandae distinctio. Dolor, voluptate debitis?
+{% endblock %}
+{% block brochure %}
+{% comment %} TODO: Brochure {% endcomment %}
+{% comment %} <a href="{% static '' %}" target="_blank">Click Here for the GM65RBT Brochure</a> {% endcomment %}
+{% endblock %}
+{% block returnButton%} 
+<a href="../scrubbers">Return to Scrubbers</a>
+{% endblock %}

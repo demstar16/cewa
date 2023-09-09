@@ -1,0 +1,26 @@
+{% extends "machines/machine-base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>C-1</title>
+{% endblock %} 
+{% block machineName %}
+<h1>C-1</h1>
+<h3>Carpet Extractor</h3>
+<hr />
+{% endblock%}
+{% block specs %}
+<img src="{% static 'images/c-1.png' %}" alt="c1" >
+<img src="{% static 'images/c-1-specs.png' %}" alt="c-1 specs" class="specs">
+{% endblock %}
+{% block usage %}
+This is a small compact carpet extractor, ideal for schools, small
+offices, upholstery cleaning, Car and chair detailing, rugs. Compact
+is easy to store.
+{% endblock %}
+{% block brochure %}
+{% comment %} TODO: brochure
+<a href="{% static '' %}" target="_blank">Click Here for the C-1 Brochure</a> {% endcomment %}
+{% endblock %}
+{% block returnButton%} 
+<a href="../carpet-accessories">Return to Carpet Accessories</a>
+{% endblock %}

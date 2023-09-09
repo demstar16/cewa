@@ -1,0 +1,23 @@
+{% extends "machines/machine-base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>GM130</title>
+{% endblock %} 
+{% block machineName %}
+<h1>GM130</h1>
+<h3>Ride On Scrubber</h3>
+<hr />
+{% endblock%}
+{% block specs %}
+<img src="{% static 'images/gm130.png' %}" alt="gm130" >
+<img src="{% static 'images/gm130-specs.png' %}" alt="gm130 specs" class="specs">
+{% endblock %}
+{% block usage %}
+no usage yet
+{% endblock %}
+{% block brochure %}
+<a href="{% static 'brochures/gm130-brochure.pdf' %}" target="_blank">Click Here for the GM130 Brochure</a>
+{% endblock %}
+{% block returnButton%} 
+<a href="../scrubbers">Return to Scrubbers</a>
+{% endblock %}
