@@ -1,5 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
+from django.core.mail import send_mail
+
+from .forms import ContactForm
 
 # Create your views here.
 def index(request):
@@ -15,7 +18,23 @@ def about(request):
     return render(request, "about.html")
 
 def contact(request):
-    return render(request, "contact.html")
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        
+        if form.is_valid():
+            email = form.cleaned_data['email']
+            name = form.cleaned_data['name']
+            message = form.cleaned_data['content']
+            
+            send_mail(name, "From: " + email + "\n\nMessage: \n" +  message, email, ['cleaningequipmentwa@gmail.com'])
+            
+            return redirect('contact')
+    else:
+        form = ContactForm()
+        
+    return render(request, "contact.html", {
+        'form': form
+    })
 
 def vacuums(request):
     return render(request, "machine-categories/vacuums.html")

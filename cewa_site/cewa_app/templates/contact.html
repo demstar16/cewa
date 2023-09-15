@@ -29,28 +29,12 @@
     <hr />
   </section>
   <section id="contact-form">
-    <form
-      action="https://formsubmit.co/cleaningequipmentwa@gmail.com"
-      method="POST"
-    >
-      <h2>Get in Touch</h2>
-      <input type="text" name="Name" placeholder="Name" required />
-      <input type="email" name="Email" placeholder="Email Address" required />
-      <input
-        type="hidden"
-        name="_next"
-        value="http://127.0.0.1:5500/thankyou.html"
-      />
-      <textarea
-        name="enquiry"
-        cols="21"
-        rows="10"
-        placeholder="Enquiry goes here..."
-      ></textarea>
-      <a href="thankyou.html">
-        <button type="submit">Send</button>
-      </a>
-    </form>
+    <form method="post" action=".">
+      {% csrf_token %}
+
+      {{ form.as_p }}
+
+      <button>Send</button>
   </section>
   <section id="contact-details">
     <div><b>Email Address: </b> cleaningequipmentwa@gmail.com</div>
