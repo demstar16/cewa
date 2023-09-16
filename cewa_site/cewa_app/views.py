@@ -51,8 +51,8 @@ def polishers(request):
 def carpet_accessories(request):
     return render(request, "machine-categories/carpet-accessories.html")
 
-def misc(request):
-    return render(request, "machine-categories/misc.html")
+def foggers(request):
+    return render(request, "machine-categories/foggers.html")
 
 def w36(request):
     return render(request, "machines/w36.html")

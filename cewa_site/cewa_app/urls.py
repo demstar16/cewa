@@ -12,7 +12,7 @@ urlpatterns = [
     path('products/sweepers/', views.sweepers, name='sweepers'),
     path('products/polishers/', views.polishers, name='polishers'),
     path('products/carpet-accessories/', views.carpet_accessories, name='carpet accessories'),
-    path('products/misc/', views.misc, name='misc'),
+    path('products/foggers/', views.foggers, name='foggers'),
     path('products/vacuums/w36', views.w36, name='w36'),
     path('products/vacuums/w86', views.w86, name='w86'),
     path('products/vacuums/v20', views.v20, name='v20'),
@@ -35,5 +35,5 @@ urlpatterns = [
     path('products/carpet-accessories/c1', views.c1, name='c1'),
     path('products/carpet-accessories/c2', views.c2, name='c2'),
     path('products/carpet-accessories/b3', views.b3, name='b3'),
-    path('products/misc/x5', views.x5, name='x5'),
+    path('products/foggers/x5', views.x5, name='x5'),
 ]
