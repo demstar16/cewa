@@ -474,6 +474,19 @@
     cursor: pointer;
   }
   
+  #contact-form button {
+    margin-top: 20px;
+  }
+
+  .error {
+    color: red;
+  }
+
+  .contact-form label,
+  .contact-form li {
+    display: none;
+  }
+
   .contact-button {
     display: flex;
     justify-content: center;

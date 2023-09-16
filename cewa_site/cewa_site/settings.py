@@ -39,8 +39,13 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 
-# Application definition
+captcha_keys = open('captcha_keys.txt', "r")
+keys = captcha_keys.readlines()
 
+RECAPTCHA_PUBLIC_KEY = keys[0]
+RECAPTCHA_PRIVATE_KEY = keys[1]
+
+# Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -48,7 +53,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'cewa_app.apps.CewaAppConfig'
+    'cewa_app.apps.CewaAppConfig',
+    'captcha',
 ]
 
 MIDDLEWARE = [

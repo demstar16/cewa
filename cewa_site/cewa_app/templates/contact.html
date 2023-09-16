@@ -31,9 +31,16 @@
   <section id="contact-form">
     <form method="post" action=".">
       {% csrf_token %}
-
-      {{ form.as_p }}
-
+      <p>Name:</p>
+      {{ form.name }}
+      <p>Email:</p>
+      {{ form.email }}
+      <p>Message:</p>
+      {{ form.content }}
+      {{ form.captcha }}
+      {% for error in form.captcha.errors %}
+      <p class='error'>{{ error }}</p>
+      {% endfor %}
       <button>Send</button>
   </section>
   <section id="contact-details">
