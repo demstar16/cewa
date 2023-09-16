@@ -9,3 +9,4 @@
 - [ ] Brochures
 - [X] Misc to Fogger
 - [ ] Fix Hamburger Icon
+- [ ] Favicon
