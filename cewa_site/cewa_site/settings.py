@@ -29,11 +29,12 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 email_key = open("email_key.txt", "r")
+EMAIL_KEY = email_key.readlines()[0]
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'cleaningequipmentwa@gmail.com'
-EMAIL_HOST_PASSWORD = email_key
+EMAIL_HOST_PASSWORD = EMAIL_KEY
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
