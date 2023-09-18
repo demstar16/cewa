@@ -10,3 +10,5 @@
 - [X] Misc to Fogger
 - [X] Fix Hamburger Icon
 - [X] Favicon
+- [ ] Deploy
+- [ ] Test SMTP error on form once deployed
