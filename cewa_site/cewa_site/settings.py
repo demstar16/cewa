@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# Email Set Up
 email_key = open("email_key.txt", "r")
 EMAIL_KEY = email_key.readlines()[0]
 
@@ -39,9 +40,9 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 
+# Captcha Set Up
 captcha_keys = open('captcha_keys.txt', "r")
 keys = captcha_keys.readlines()
-
 RECAPTCHA_PUBLIC_KEY = keys[0]
 RECAPTCHA_PRIVATE_KEY = keys[1]
 
