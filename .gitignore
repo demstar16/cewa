@@ -2,8 +2,3 @@
 
 __pycache__/
 env/
-
-# KEEP KEYS OUT OF GITHUB REPO
-cewa_site/api_key.txt
-cewa_site/email_key.txt
-cewa_site/captcha_keys.txt
