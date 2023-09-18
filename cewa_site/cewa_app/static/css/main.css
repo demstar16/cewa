@@ -54,8 +54,8 @@
   }
   
   .hamburger {
-    display: flex;
-    justify-content: end;
+    flex-direction: column;
+    align-items: flex-end;
     position: relative;
     z-index: 1;
     float: right;
@@ -190,6 +190,7 @@
     max-width: 1300px;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 15px;
     justify-content: center;
   }
   
