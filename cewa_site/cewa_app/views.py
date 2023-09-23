@@ -69,6 +69,15 @@ def i15b(request):
 def i35b(request):
     return render(request, "machines/i35b.html")
 
+def i50b(request):
+    return render(request, "machines/i50b.html")
+
+def i50bt(request):
+    return render(request, "machines/i50bt.html")
+
+def i70bt(request):
+    return render(request, "machines/i70bt.html")
+
 def gm50b(request):
     return render(request, "machines/gm50b.html")
 
