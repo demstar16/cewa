@@ -1,0 +1,23 @@
+{% extends "machines/machine-base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>{TITLE}</title>
+{% endblock %} 
+{% block machineName %}
+<h1>{MACHINE NAME}</h1>
+<h3>{WHAT IT IS}</h3>
+<hr />
+{% endblock%}
+{% block specs %}
+<img src="{% static 'images/{IMAGE}' %}" alt="" >
+<img src="{% static 'images/{SPECS}' %}" class="specs" alt="">
+{% endblock %}
+{% block usage %}
+{USAGE}
+{% endblock %}
+{% block brochure %}
+<a href="{% static 'brochures/' %}" target="_blank">Click Here for the {BROCHURE NAME} Brochure</a>
+{% endblock %}
+{% block returnButton%} 
+<a href="../{RETURN}">Return to {TYPE OF MACHINE}</a>
+{% endblock %}
