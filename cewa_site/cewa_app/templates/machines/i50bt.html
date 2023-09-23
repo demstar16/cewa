@@ -1,0 +1,25 @@
+{% extends "machines/machine-base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>i50BT</title>
+{% endblock %} 
+{% block machineName %}
+<h1>i50BT</h1>
+<h3>Walk Behind Scrubber</h3>
+<hr />
+{% endblock%}
+{% block specs %}
+<img src="{% static 'images/i50bt.png' %}" alt="i50bt" >
+<img src="{% static 'images/i50bt-specs.png' %}" class="specs" alt="i50bt-specs">
+{% endblock %}
+{% block usage %}
+The i50BT Walk Behind Scrubber provides users with an easy and efficient cleaning experience. This machine is mostly 
+suited for epoxy, marble, and tile floor types and is widely used in workshops, airports, supermarkets, and other 
+similar workplaces.
+{% endblock %}
+{% block brochure %}
+<a href="{% static 'brochures/i50bt-brochure.pdf' %}" target="_blank">Click Here for the i50BT Brochure</a>
+{% endblock %}
+{% block returnButton%} 
+<a href="../scrubbers">Return to Scrubbers</a>
+{% endblock %}
