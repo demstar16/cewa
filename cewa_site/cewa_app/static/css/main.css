@@ -848,13 +848,14 @@
   
   .machine-display-and-specs {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     max-width: 1000px;
     margin: 0 auto;
   }
   
   .machine-display-and-specs img {
-    width: 40vh;
+    width: 45vh;
     border: 2px solid #0084f0;
     border-radius: 20px;
   }
