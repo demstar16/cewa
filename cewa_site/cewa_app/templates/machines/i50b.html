@@ -1,0 +1,25 @@
+{% extends "machines/machine-base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>i50B</title>
+{% endblock %} 
+{% block machineName %}
+<h1>i50B</h1>
+<h3>Walk Behind Scrubber</h3>
+<hr />
+{% endblock%}
+{% block specs %}
+<img src="{% static 'images/i50b.png' %}" alt="i50B" >
+<img src="{% static 'images/i50b-specs.png' %}" class="specs" alt="i50B specs">
+{% endblock %}
+{% block usage %}
+The i50B is an convenient and economic walk behind scrubber which offers state of the
+art cleaning capabilities whilst being easy to use and easy to maintain. Fantastic for 
+medium to large cleaning areas.
+{% endblock %}
+{% block brochure %}
+<a href="{% static 'brochures/i50b-brochure.pdf' %}" target="_blank">Click Here for the i50B Brochure</a>
+{% endblock %}
+{% block returnButton%} 
+<a href="../scrubbers">Return to Scrubbers</a>
+{% endblock %}
