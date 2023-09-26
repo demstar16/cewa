@@ -32,8 +32,7 @@ DEBUG = os.getenv("DEBUG", "False") == "True"
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
 
 # Email Set Up
-email_key = open("email_key.txt", "r")
-EMAIL_KEY = email_key.readlines()[0]
+EMAIL_KEY = os.getenv("EMAIL_KEY")
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
@@ -44,10 +43,8 @@ EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 
 # Captcha Set Up
-captcha_keys = open('captcha_keys.txt', "r")
-keys = captcha_keys.readlines()
-RECAPTCHA_PUBLIC_KEY = keys[0]
-RECAPTCHA_PRIVATE_KEY = keys[1]
+RECAPTCHA_PUBLIC_KEY = os.getenv("PUBLIC_CAPTCHA_KEY")
+RECAPTCHA_PRIVATE_KEY = os.getenv("PRIVATE_CAPTCHA_KEY")
 
 # Application definition
 INSTALLED_APPS = [
