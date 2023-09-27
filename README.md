@@ -13,3 +13,5 @@
 - [X] Deploy
 - [X] Test SMTP error on form once deployed
 - [ ] Fix Mobile Scaling
+- [ ] Add link to contact page on machine-base file
+- [ ] Add phone number to form
