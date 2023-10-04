@@ -38,6 +38,7 @@
   
   #cewa-logo {
     max-height: 6em;
+    max-width: 10em;
   }
   
   #iclean-logo {
@@ -159,19 +160,7 @@
     margin: 0 auto;
   }
   
-  #welcome h1,
-  #products-intro h1,
-  #vacuums-intro h1,
-  #scrubbers-intro h1,
-  #sweepers-intro h1,
-  #polishers-intro h1,
-  #carpet-accessories-intro h1,
-  #misc-intro h1,
-  #thankyou h1,
-  #location h1,
-  #group h1,
-  #service-intro h1,
-  #service-videos h1 {
+  .heading1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     color: #0084f0;
@@ -303,7 +292,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1520px;
+    max-width: 1400px;
     padding-top: 20px;
     margin-left: 100px;
     margin-right: 100px;
@@ -318,6 +307,7 @@
     text-align: center;
     padding: 20px;
     border-radius: 1px;
+    max-width: 450px;
   }
   
   #home-boxes p:hover {
@@ -332,6 +322,7 @@
     height: 300px;
     margin-top: 70px;
     margin-left: 25px;
+    max-width: fit-content;
   }
   
   .home-box img {
