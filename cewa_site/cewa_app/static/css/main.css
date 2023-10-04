@@ -11,7 +11,6 @@
     box-sizing: border-box;
     transition: 0.1s linear;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 100%;
   }
   
   .container {
@@ -952,16 +951,17 @@
       align-items: center;
       margin-left: 0px;
     }
+    
+    .location-panel {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .location-text img {
+      display: none;
+    }
   }
 
-  .location-panel {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .location-text img {
-    display: none;
-  }
 
 
   
