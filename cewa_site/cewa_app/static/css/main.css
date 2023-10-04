@@ -4,7 +4,7 @@
     --lightBlue: #98e3e9;
     --black: #000;
   }
-
+  
   * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
   }
-
   
   .container {
     height: 4em;
@@ -36,11 +35,6 @@
     padding: 16px 32px;
     border-bottom: 3px solid var(--primary);
   }
-
-  .align2 {
-    display: flex;
-    justify-content: flex-end;
-  }
   
   #cewa-logo {
     max-height: 6em;
@@ -50,7 +44,16 @@
     max-width: 4em;
     max-height: 4em;
   }
-
+  
+  .align1 {
+    justify-content: flex-start;
+  }
+  
+  .align2 {
+    display: flex;
+    justify-content: end;
+  }
+  
   .hamburger {
     flex-direction: column;
     align-items: flex-end;
@@ -156,7 +159,19 @@
     margin: 0 auto;
   }
   
-  .heading1 {
+  #welcome h1,
+  #products-intro h1,
+  #vacuums-intro h1,
+  #scrubbers-intro h1,
+  #sweepers-intro h1,
+  #polishers-intro h1,
+  #carpet-accessories-intro h1,
+  #misc-intro h1,
+  #thankyou h1,
+  #location h1,
+  #group h1,
+  #service-intro h1,
+  #service-videos h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     color: #0084f0;
@@ -294,7 +309,6 @@
     margin-right: 100px;
     margin-top: 20px;
   }
-
   
   #home-boxes p {
     background-color: #0084f0;
@@ -450,6 +464,7 @@
   form {
     display: flex;
     flex-direction: column;
+    align-items: left;
   }
   
   #contact-form input,
@@ -532,7 +547,6 @@
   .location-panel {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     padding: 20px;
     max-width: 1300px;
     color: white;
@@ -911,7 +925,6 @@
     border-radius: 20px;
     margin-bottom: 10px;
   } 
-
   
   @media (min-width: 900px) {
     .hamburger {
@@ -928,7 +941,7 @@
   }
   
   @media (max-width: 900px) {
-    #iclean-logo img {
+    .align2 {
       display: none;
     }
   
@@ -948,17 +961,16 @@
       align-items: center;
       margin-left: 0px;
     }
-
-    .location-panel {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .location-text img {
-      display: none;
-    }
   }
 
+  .location-panel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .location-text img {
+    display: none;
+  }
 
 
   
