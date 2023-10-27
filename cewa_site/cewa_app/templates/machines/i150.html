@@ -1,0 +1,24 @@
+{% extends "machines/machine-base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>i150</title>
+{% endblock %} 
+{% block machineName %}
+<h1>i150</h1>
+<h3>Ride On Scrubber</h3>
+<hr />
+{% endblock%}
+{% block specs %}
+<img src="{% static 'images/i150.png' %}" alt="i150" >
+<img src="{% static 'images/i150-specs.png' %}" alt="i150 specs" class="specs">
+{% endblock %}
+{% block usage %}
+The Ride On i150 is fantastic for large and open areas. They're efficient and fast 
+when it comes to cleaning and can make light work of all suited areas.
+{% endblock %}
+{% block brochure %}
+<a href="{% static 'brochures/i150-brochure.pdf' %}" target="_blank">Click Here for the i150 Brochure</a>
+{% endblock %}
+{% block returnButton%} 
+<a href="../scrubbers">Return to Scrubbers</a>
+{% endblock %}
