@@ -27,6 +27,7 @@ urlpatterns = [
     path('products/scrubbers/gm65rbt', views.gm65rbt, name='gm65rbt'),
     path('products/scrubbers/gm110', views.gm110, name='gm110'),
     path('products/scrubbers/i130', views.i130, name='i130'),
+    path('products/scrubbers/i150', views.i150, name='i150'),
     path('products/scrubbers/gm130', views.gm130, name='gm130'),
     path('products/scrubbers/gm160', views.gm160, name='gm160'),
     path('products/scrubbers/gm230', views.gm230, name='gm230'),

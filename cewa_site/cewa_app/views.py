@@ -96,6 +96,9 @@ def gm110(request):
 def i130(request):
     return render(request, "machines/i130.html")
 
+def i150(request):
+    return render(request, "machines/i150.html")
+
 def gm130(request):
     return render(request, "machines/gm130.html")
 
