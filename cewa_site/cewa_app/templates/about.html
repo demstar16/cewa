@@ -14,6 +14,7 @@
 <a href="../">Home</a>
 <a href="../products">Products</a>
 <a href="../services">Services</a>
+<a href="../about">About</a>
 <a href="../contact">Contact</a>
 {% endblock %} 
 {% block content %}
@@ -55,7 +56,7 @@
     </div>
 
     <div class="about-box-left">
-      <img src="{% static 'images/dempsey.png' %}" alt="Dempsey Thompson" />
+      <img class="mobile-hide" src="{% static 'images/dempsey.png' %}" alt="Dempsey Thompson" />
       <div class="about-description">
         <div class="person-description">
           <h2>Dempsey Thompson</h2>
@@ -70,6 +71,7 @@
           <h3>Operations Manager and Software Developer</h3>
         </div>
       </div>
+      <img class="mobile-hide" src="{% static 'images/dempsey.png' %}" alt="Dempsey Thompson" />
     </div>
     <div class="about-box-right">
       <div class="about-description">
@@ -90,7 +92,7 @@
       <img src="{% static 'images/cassidy.png' %}" alt="Cassidy Thompson" />
     </div>
     <div class="about-box-left">
-      <img src="{% static 'images/oliver.png' %}" alt="Oliver Angelcoff" />
+      <img class="mobile-hide" src="{% static 'images/oliver.png' %}" alt="Oliver Angelcoff" />
       <div class="about-description">
         <div class="person-description">
           <h2>Oliver Angelcoff</h2>
@@ -107,6 +109,7 @@
           <h3>Service Technician</h3>
         </div>
       </div>
+      <img class="mobile-show" src="{% static 'images/oliver.png' %}" alt="Oliver Angelcoff" />
     </div>
   </section>
 </main>
