@@ -1,0 +1,26 @@
+{% extends "machines/machine-base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>i1300</title>
+{% endblock %} 
+{% block machineName %}
+<h1>i1300</h1>
+<h3>Ride On Sweeper</h3>
+<hr />
+{% endblock%}
+{% block specs %}
+<img src="{% static 'images/i1300.png' %}" alt="i1300" >
+<img src="{% static 'images/i1300-specs.png' %}" alt="i1300 specs" class="specs">
+{% endblock %}
+{% block usage %}
+The i1300 is a great sweeper suited for large and open areas. Most suited for outdoor 
+areas needing a fast and efficient sweep. With such a large hopper and great run time,
+it is an ideal and efficient ride on sweeper.
+{% endblock %}
+{% block brochure %}
+{% comment %} TODO: brochure
+<a href="{% static '' %}" target="_blank">Click Here for the S1500D Brochure</a> {% endcomment %}
+{% endblock %}
+{% block returnButton%} 
+<a href="../sweepers">Return to Sweepers</a>
+{% endblock %}

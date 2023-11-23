@@ -1,0 +1,25 @@
+{% extends "machines/machine-base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>i17S</title>
+{% endblock %} 
+{% block machineName %}
+<h1>i17S</h1>
+<h3>Orbiplate Floor Machine</h3>
+<hr />
+{% endblock%}
+{% block specs %}
+<img src="{% static 'images/i17s.png' %}" alt="i17s" >
+<img src="{% static 'images/i17s-specs.png' %}" alt="i17s specs" class="specs">
+{% endblock %}
+{% block usage %}
+This machine is excellent at floor cleaning. It is a highly efficient machine that 
+excels at corner cleaning.
+{% endblock %}
+{% block brochure %}
+{% comment %} TODO: brochure
+<a href="{% static '' %}" target="_blank">Click Here for the FC-2517 Brochure</a> {% endcomment %}
+{% endblock %}
+{% block returnButton%} 
+<a href="../polishers">Return to Polishers</a>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "machines/machine-base.html" %} 
+{% load static %} 
+{% block docTitle %}
+<title>i17R</title>
+{% endblock %} 
+{% block machineName %}
+<h1>i17R</h1>
+<h3>Orbidisk Floor Machine</h3>
+<hr />
+{% endblock%}
+{% block specs %}
+<img src="{% static 'images/i17r.png' %}" alt="i17r" >
+<img src="{% static 'images/i17r-specs.png' %}" alt="i17r specs" class="specs">
+{% endblock %}
+{% block usage %}
+This machine is excellent at floor cleaning. It is equipped with an eccentric 
+damping system, which allows the brush disc to fully contact the ground. It is a 
+highly efficient machine.
+{% endblock %}
+{% block brochure %}
+{% comment %} TODO: brochure
+<a href="{% static '' %}" target="_blank">Click Here for the FC-2517 Brochure</a> {% endcomment %}
+{% endblock %}
+{% block returnButton%} 
+<a href="../polishers">Return to Polishers</a>
+{% endblock %}

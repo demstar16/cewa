@@ -54,9 +54,6 @@ def carpet_accessories(request):
 def foggers(request):
     return render(request, "machine-categories/foggers.html")
 
-def w36(request):
-    return render(request, "machines/w36.html")
-
 def w86(request):
     return render(request, "machines/w86.html")
 
@@ -116,6 +113,15 @@ def s1900d(request):
 
 def isweep(request):
     return render(request, "machines/isweep.html")
+
+def i1300(request):
+    return render(request, "machines/i1300.html")
+
+def i17r(request):
+    return render(request, "machines/i17r.html")
+
+def i17s(request):
+    return render(request, "machines/i17s.html")
 
 def fc1517(request):
     return render(request, "machines/fc1517.html")
